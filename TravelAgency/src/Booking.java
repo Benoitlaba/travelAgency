@@ -2,10 +2,10 @@ import java.util.Date;
 
 public class Booking {
 
-    int bookingNumber;
-    Date bookingDate;
-    Packages aPackages;
-    Payment payment;
+    private int bookingNumber;
+    private Date bookingDate;
+    private Packages aPackages;
+    private Payment payment;
 
     public Booking(int bookingNumber, Date bookingDate, Packages aPackages, Payment payment) {
         this.bookingNumber = bookingNumber;

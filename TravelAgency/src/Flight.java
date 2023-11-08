@@ -2,8 +2,8 @@ import java.util.Objects;
 
 public class Flight {
 
-    String destination;
-    Double price;
+    private String destination;
+    private Double price;
 
     public Flight(String destination, Double price) {
         this.destination = destination;

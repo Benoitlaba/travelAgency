@@ -1,8 +1,8 @@
 public class Car {
 
-    String make;
-    String model;
-    String color;
+    private String make;
+    private String model;
+    private String color;
 
     public Car(String make, String model, String color) {
         this.make = make;

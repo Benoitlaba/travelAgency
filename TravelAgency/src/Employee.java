@@ -3,13 +3,12 @@ import java.util.Objects;
 
 public class Employee extends Person{
 
-    String position;
+    private String position;
     public Employee(String position, String name, Date dob, String email) {
         super(name, dob, email);
         this.position = position;
     }
 
-    //toString Override
     @Override
     public String toString() {
         return ("This is an employee");

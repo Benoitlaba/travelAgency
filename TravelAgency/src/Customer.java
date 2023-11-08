@@ -1,9 +1,10 @@
+import java.text.MessageFormat;
 import java.util.Date;
 import java.util.Objects;
 
 public class Customer extends Person {
 
-    Booking booking;
+    private final Booking booking;
 
 
     public Customer(Booking booking, String name, Date dob, String email) {
@@ -11,16 +12,14 @@ public class Customer extends Person {
         this.booking = booking;
     }
 
-    // Getter
     public Booking getBooking() {
         return booking;
     }
 
 
-    //toString Override
     @Override
     public String toString() {
-        return ("This is a customer");
+        return MessageFormat.format("This is a customer and their name is {0}, dob: {1}, position: {2}", super.getName(), super.getDob(), super.getEmail());
     }
 
     @Override

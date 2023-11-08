@@ -2,9 +2,9 @@ import java.util.Date;
 
 public class Person {
 
-    String name;
-    Date dob;
-    String email;
+    private String name;
+    private final Date dob;
+    private String email;
 
     public Person(String name, Date dob, String email) {
         this.name = name;
@@ -16,11 +16,18 @@ public class Person {
         return name;
     }
 
+    public Date getDob() {
+        return dob;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     public String setName(String name) {
         return this.name = name;
     }
 
-    //toString Override
     public String toString() {
         return ("This is a base person");
     }

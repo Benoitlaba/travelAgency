@@ -8,7 +8,7 @@ public class Main {
 
         //Person object
         Person person = new Person("Slarve",new Date(), "b2@gmail.com");
-        System.out.println(person.name);
+        //System.out.println(person.name);
         System.out.println(person);
 
 
@@ -40,11 +40,11 @@ public class Main {
 
 
         Hotel hotel = new Hotel("Hyatt Agency", "9801 International Dr", 5);
-        System.out.println("\nHotel name: " + hotel.name);
+        //System.out.println("\nHotel name: " + hotel.name);
 
 
         Car car = new Car("mazda", "mazda3", "blue");
-        System.out.println("\nCar name: " + car.model);
+        //System.out.println("\nCar name: " + car.model);
 
 
         //Packages
@@ -78,6 +78,6 @@ public class Main {
         //Agency
         Agency agency = new Agency("CheapOair","https://www.cheapoair.com/",customerList,
                 employeeList, bookingList);
-        System.out.println("\nAgency name: " + agency.name);
+        //System.out.println("\nAgency name: " + agency.toString());
     }
 }
