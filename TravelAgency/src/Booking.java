@@ -13,4 +13,20 @@ public class Booking {
         this.aPackages = aPackages;
         this.payment = payment;
     }
+
+    public Date getBookingDate() {
+        return bookingDate;
+    }
+
+    public void setBookingDate(Date bookingDate) {
+        this.bookingDate = bookingDate;
+    }
+
+    public Packages getPackages() {
+        return aPackages;
+    }
+
+    public void setPackages(Packages aPackages) {
+        this.aPackages = aPackages;
+    }
 }

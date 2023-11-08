@@ -17,11 +17,34 @@ public class Agency {
         this.bookingList = bookingList;
     }
 
-    public ArrayList<Customer> addCustomer(Customer customer) {
+    public void addCustomer(Customer customer) {
+        customerList.add(customer);
+    }
 
-        ArrayList<Customer> list = new ArrayList<>();
-        list.add(customer);
+    public void removeCustomer(Customer customer) {
+        customerList.remove(customer);
+    }
 
-        return list;
+    public void addEmployee(Employee employee) {
+        employeeList.add(employee);
+    }
+
+    public void removeEmployee(Employee employee) {
+        employeeList.remove(employee);
+    }
+
+    public void addBooking(Booking booking) {
+        bookingList.add(booking);
+    }
+
+    public void removeBooking(Booking booking) {
+        bookingList.remove(booking);
+    }
+
+    @Override
+    public String toString() {
+        return "Agency " +
+                "name='" + name + '\'' +
+                ", webAddress='" + webAddress + '\'' ;
     }
 }

@@ -19,7 +19,8 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        return MessageFormat.format("This is a customer and their name is {0}, dob: {1}, position: {2}", super.getName(), super.getDob(), super.getEmail());
+        return MessageFormat.format("This is a customer and their name is {0}, dob: {1}, position: {2}",
+                super.getName(), super.getDob(), super.getEmail());
     }
 
     @Override
@@ -34,12 +35,12 @@ public class Customer extends Person {
 
         Customer customer = (Customer) obj;
 
-        return Objects.equals(booking, customer.booking);
+        return Objects.equals(super.getName(), customer.getName()) && Objects.equals(super.getEmail(), customer.getEmail());
 
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(booking);
+        return Objects.hash(super.getName(), super.getEmail());
     }
 }
